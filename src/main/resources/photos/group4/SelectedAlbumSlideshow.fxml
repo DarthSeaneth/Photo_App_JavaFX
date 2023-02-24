@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.group4.controller.SelectedAlbumSlideshowController">
+   <children>
+      <Button fx:id="backToPhotoListButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackToPhotoList" text="Go Back" />
+      <Button fx:id="logoutButton" layoutX="631.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutFromAlbumSlideshowHome" text="Logout" />
+      <ImageView fx:id="photoImageView" fitHeight="409.0" fitWidth="618.0" layoutX="45.0" layoutY="46.0" pickOnBounds="true" />
+      <Button fx:id="previousPhotoButton" layoutX="73.0" layoutY="460.0" mnemonicParsing="false" onAction="#previousPhoto" text="Previous Photo" />
+      <Button fx:id="nextPhotoButton" layoutX="555.0" layoutY="460.0" mnemonicParsing="false" onAction="#nextPhoto" text="Next Photo" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.group4.controller.SelectedPhotoDisplayController">
+   <children>
+      <Button fx:id="backToPhotoListButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackToPhotoList" text="Go Back" />
+      <Button fx:id="logoutButton" layoutX="634.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutFromPhotoDisplayHome" text="Logout" />
+      <ImageView fx:id="photoImageView" fitHeight="327.0" fitWidth="425.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" />
+      <ListView fx:id="photoTagListView" layoutX="461.0" layoutY="74.0" prefHeight="327.0" prefWidth="226.0" />
+      <Text fx:id="photoInfoLabel" layoutX="176.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="347.7366638183594" />
+      <Button fx:id="addPhotoTagButton" layoutX="303.0" layoutY="407.0" mnemonicParsing="false" onAction="#addPhotoTag" text="Add Photo Tag" />
+      <TextField fx:id="photoTagNameTextField" alignment="CENTER" layoutX="196.0" layoutY="489.0" promptText="Enter Tag Name" />
+      <TextField fx:id="photoTagValueTextField" alignment="CENTER" layoutX="354.0" layoutY="471.0" promptText="Enter Tag Value" />
+      <Button fx:id="deletePhotoTagButton" layoutX="297.0" layoutY="520.0" mnemonicParsing="false" onAction="#deletePhotoTag" text="Delete Photo Tag" />
+      <Text layoutX="520.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo Tags" textAlignment="CENTER" wrappingWidth="108.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="photoTagNameChoiceBox" layoutX="196.0" layoutY="454.0" prefWidth="150.0" />
+      <Text layoutX="255.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose or create a Photo Tag Name" />
+      <Text layoutX="263.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.group4.controller.SelectedAlbumController">
+   <children>
+      <Button fx:id="backToAlbumListButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackToAlbumList" text="Go Back" />
+      <Button fx:id="logoutButton" layoutX="634.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutFromPhotoListHome" text="Logout" />
+      <Button fx:id="addPhotoButton" layoutX="401.0" layoutY="187.0" mnemonicParsing="false" onAction="#addPhoto" text="Add Photo" />
+      <Button fx:id="captionPhotoButton" layoutX="494.0" layoutY="257.0" mnemonicParsing="false" onAction="#captionPhoto" text="Caption Photo" />
+      <Button fx:id="deletePhotoButton" layoutX="602.0" layoutY="187.0" mnemonicParsing="false" onAction="#deletePhoto" text="Delete Photo" />
+      <Button fx:id="openPhotoButton" layoutX="474.0" layoutY="331.0" mnemonicParsing="false" onAction="#openPhoto" prefHeight="62.0" prefWidth="131.0" text="Open Photo" />
+      <Button fx:id="copyPhotoToAlbumButton" layoutX="401.0" layoutY="407.0" mnemonicParsing="false" onAction="#copyPhotoToAlbum" text="Copy Photo to Album" />
+      <Button fx:id="movePhotoToAlbumButton" layoutX="554.0" layoutY="407.0" mnemonicParsing="false" onAction="#movePhotoToAlbum" text="Move Photo to Album" />
+      <Button fx:id="albumSlideshowButton" layoutX="474.0" layoutY="482.0" mnemonicParsing="false" onAction="#albumSlideshow" prefHeight="44.0" prefWidth="131.0" text="Album Slideshow" />
+      <Button fx:id="searchForPhotosButton" layoutX="474.0" layoutY="543.0" mnemonicParsing="false" onAction="#searchForPhotos" prefHeight="44.0" prefWidth="131.0" text="Search for Photos" />
+      <TextField fx:id="photoCaptionTextField" alignment="CENTER" layoutX="465.0" layoutY="294.0" promptText="Enter Photo Caption" />
+      <ImageView fx:id="photoThumbnailImageView" fitHeight="126.0" fitWidth="247.0" layoutX="88.0" layoutY="31.0" pickOnBounds="true" />
+      <Text layoutX="42.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos" textAlignment="CENTER" wrappingWidth="46.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="86.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Photo" textAlignment="CENTER" wrappingWidth="165.5999999999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="namePhotoButton" layoutX="496.0" layoutY="187.0" mnemonicParsing="false" onAction="#namePhoto" text="Name Photo" />
+      <TextField fx:id="photoNameTextField" alignment="CENTER" layoutX="465.0" layoutY="223.0" promptText="Enter Photo Name" />
+      <ChoiceBox fx:id="albumChoiceBox" layoutX="466.0" layoutY="443.0" prefWidth="150.0" />
+      <ScrollPane fx:id="imageScrollPane" layoutX="46.0" layoutY="157.0" prefHeight="408.0" prefWidth="327.0">
+         <content>
+            <TilePane fx:id="photoTilePane" prefHeight="387.0" prefWidth="304.0" scaleShape="false" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="selectedPhotoDetailsLabel" alignment="TOP_CENTER" layoutX="363.0" layoutY="59.0" prefHeight="96.0" prefWidth="327.0" wrapText="true" />
+      <Label layoutX="367.0" layoutY="39.0" text="Selected Photo Details:" />
+   </children>
+</AnchorPane>
